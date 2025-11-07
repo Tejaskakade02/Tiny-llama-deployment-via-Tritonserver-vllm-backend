@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  triton:
+    image: nvcr.io/nvidia/tritonserver:24.10-vllm-python-py
+    container_name: triton_vllm
+    command: >
+      tritonserver
+      --model-repository=/models
+      --allow-http=true
+      --allow-grpc=true
+      --http-port=8000
+      --grpc-port=8001
+      --metrics-port=8002
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+    volumes:
+      - ./model-repository:/models
+      - ./merged-llama3:/workspace/merged-llama3
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - HUGGING_FACE_HUB_TOKEN=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
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

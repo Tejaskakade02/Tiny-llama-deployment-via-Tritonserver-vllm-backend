@@ -1,0 +1,7 @@
+{
+  "model": "/workspace/tiny-llama",
+  "dtype": "float16",
+  "tensor_parallel_size": 1,
+  "gpu_memory_utilization": 0.85,
+  "max_num_seqs": 8
+}
