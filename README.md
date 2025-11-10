@@ -30,7 +30,8 @@ lora-deployment/
 ├── model_repository/
 │   └── tiny_llama/
 │       └── 1/
-│           └── config.pbtxt
+|       |   └── model.josn
+|       └── config.pbtxt
 ├── vllm_workspace/
 │   └── tiny-llama/
 └── test_client.py
