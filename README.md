@@ -220,7 +220,7 @@ Objective: End-to-end deployment of an open-source LLM (TinyLlama) using NVIDIA 
 ```
 🧠 Example Output:
 
-![Model Output](assets/screen one.png)
+![Model Output](assets/screen_one.png)
 
   Model_up 
 ![Model Output](assets/model_up.png)
