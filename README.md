@@ -213,11 +213,12 @@ Copy code
          │                        ▼
      Streaming              GPU-based
      Text Output          Text Generation
+```
 🧾 Author Information
 Author: Tejas Kakade
 Project: vLLM Model Deployment on Triton Server
 Objective: End-to-end deployment of an open-source LLM (TinyLlama) using NVIDIA Triton with GPU acceleration and streaming inference.
-```
+
 🧠 Example Output:
 
 ![Model Output](assets/screen_one.png)
