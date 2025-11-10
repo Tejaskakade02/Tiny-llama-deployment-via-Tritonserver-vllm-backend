@@ -22,24 +22,19 @@ Make sure your system meets the following requirements before starting:
 
 Organize your files as follows:
 
+```yaml
 lora-deployment/
 │
 ├── Dockerfile
 ├── requirements.txt
 ├── model_repository/
-│ └── tiny_llama/
-│ └── 1/
-│ └── config.pbtxt
+│   └── tiny_llama/
+│       └── 1/
+│           └── config.pbtxt
 ├── vllm_workspace/
-│ └── tiny-llama/
+│   └── tiny-llama/
 └── test_client.py
 
-yaml
-Copy code
-
-This structure allows Triton to automatically discover and load models during runtime.
-
----
 
 ## 🧠 3. Create Workspace and Download the Model
 
@@ -222,3 +217,14 @@ Copy code
 Author: Tejas Kakade
 Project: vLLM Model Deployment on Triton Server
 Objective: End-to-end deployment of an open-source LLM (TinyLlama) using NVIDIA Triton with GPU acceleration and streaming inference.
+```
+🧠 Example Output:
+
+![Model Output](assets/screen one.png)
+
+  Model_up 
+![Model Output](assets/model_up.png)
+
+  Test_output
+![Model Output](assets/test_output.png)
+---
